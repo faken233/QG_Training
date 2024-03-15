@@ -12,4 +12,5 @@ add_executable(QG
         major/Week1/LinkList/duLinkList/Sources/main.c
         major/Week1/LinkList/linkList/Headers/linkedList.h
         major/Week1/LinkList/linkList/Sources/linkedList.h
-        major/Week1/LinkList/linkList/Sources/main.c)
+        major/Week1/LinkList/linkList/Sources/main.c
+        minor/Week1/ddasd.h)
