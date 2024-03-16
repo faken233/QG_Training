@@ -72,7 +72,23 @@ void DestroyList(LinkedList *L);
  *	@return		 : Status
  *  @notice      : None
  */
-Status InsertList(LNode *p, LNode *q);
+Status InsertList(LinkedList L, ElemType e, LNode *p);
+
+/**
+ * @name        : Status AddList(LinkedList L, LNode *p)
+ * @description :Add nodes at the end of the linked list
+ * @param L
+ * @param p
+ * @return Status
+ */
+Status AddList(LinkedList L, LNode *p);
+
+/**
+ *
+ * @param e
+ * @return
+ */
+LinkedList createNode(ElemType e);
 
 /**
  *  @name        : Status DeleteList(LNode *p, ElemType *e)
@@ -81,7 +97,7 @@ Status InsertList(LNode *p, LNode *q);
  *	@return		 : Status
  *  @notice      : None
  */
-Status DeleteList(LNode *p, ElemType *e);
+Status DeleteList(LinkedList L, ElemType e);
 
 /**
  *  @name        : void TraverseList(LinkedList L, void (*visit)(ElemType e))
@@ -92,6 +108,7 @@ Status DeleteList(LNode *p, ElemType *e);
  */
 void TraverseList(LinkedList L, void (*visit)(ElemType e));
 
+
 /**
  *  @name        : Status SearchList(LinkedList L, ElemType e)
  *	@description : find the first node in the linked list according to e
@@ -99,7 +116,7 @@ void TraverseList(LinkedList L, void (*visit)(ElemType e));
  *	@return		 : Status
  *  @notice      : None
  */
-Status SearchList(LinkedList L, ElemType e);
+LNode* SearchList(LinkedList L, ElemType e);
 
 /**
  *  @name        : Status ReverseList(LinkedList *L)
@@ -109,6 +126,15 @@ Status SearchList(LinkedList L, ElemType e);
  *  @notice      : None
  */
 Status ReverseList(LinkedList *L);
+
+void ShowList(LinkedList L);
+
+/**
+ *
+ * @param L (the head node)
+ * @return the head node of the reversed linked list
+ */
+LinkedList ReverseListByRecursion(LinkedList L);
 
 /**
  *  @name        : Status IsLoopList(LinkedList L)
@@ -126,7 +152,7 @@ Status IsLoopList(LinkedList L);
  *	@return		 : LNode(the new head node)
  *  @notice      : choose to finish
  */
-LNode* ReverseEvenList(LinkedList *L);
+Status ReverseEvenList(LinkedList L);
 
 /**
  *  @name        : LNode* FindMidNode(LinkedList *L)

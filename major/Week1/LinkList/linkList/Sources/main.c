@@ -1,118 +1,132 @@
-#include <stdio.h>
-#include <stdlib.h>
+//
+// Created by 何松 on 2024/3/16.
+//
 #include "../Headers/linkedList.h"
+#include <stdio.h>
+#include "function.c"
+void printMenu();
 
-int main() {
-    printf("Hello, World!\n");
+
+int main(){
+    int choice;
+    int data;
+    LinkedList L;
+
+
+    do {
+        printMenu();
+        scanf("%d", &choice);
+//        printf("\n***** 图形菜单 *****\n");
+//        printf("1. 初始化链表\n");
+//        printf("2. 添加节点\n");
+//        printf("3. 插入节点\n");
+//        printf("4. 删除节点\n");
+//        printf("5. 查询节点\n");
+//        printf("6. 反转链表\n");
+//        printf("7. 判断链表是否成环\n");
+//        printf("8. 奇偶调换\n");
+//        printf("9. 查询中点\n");
+//        printf("10. 显示当前链表\n");
+//        printf("11. 退出\n");
+//        printf("请选择操作: ");
+
+        switch (choice) {
+            case 1:
+                printf("初始化链表\n");
+                InitList(&L);
+                break;
+            case 2:
+                printf("添加一个节点,请输入节点的data:");
+                scanf("%d",&data);
+                getchar();
+                LinkedList new = createNode(data);
+                AddList(L,new);
+                break;
+            case 3:
+                printf("插入节点操作\n现在链表数据如下:\n");
+                ShowList(L);
+                printf("输入你准备插入的位置(即哪个节点后)的data 和插入的节点的data,例: 1 2\n请输入:");
+                int position = 0;
+                int inserted = 0;
+                scanf("%d%d", &position, &inserted);
+                LNode *inserted_node = createNode(inserted);
+                InsertList(L, position, inserted_node);
+                printf("操作后链表数据如下:\n");
+                ShowList(L);
+                break;
+            case 4:
+                printf("执行删除操作\n现在链表数据如下:\n");
+                ShowList(L);
+                printf("输入你要删除的节点data:");
+                scanf("%d",&data);
+                getchar();
+                DeleteList(L, data);
+                printf("操作后链表数据如下:\n");
+                ShowList(L);
+                break;
+            case 5:
+                printf("查询操作\n");
+                printf("输入你要查找的节点数据:");
+                scanf("%d",&data);
+                getchar();
+                LNode *pNode = SearchList(L, data);
+                if (pNode->data != 0){
+                    printf("查找到对应节点\n");
+                } else{
+                    printf("未找到此节点\n");
+                }
+                break;
+            case 6:
+                printf("反转链表\n请选择反转方法:1. 迭代法//2. 递归法\n输入你的选择:");
+                scanf("%d",&data);
+                getchar();
+                if(data == 1){
+                    ReverseList(&L);
+                }else if(data == 2){
+                    L->next = ReverseListByRecursion(L->next);
+                }else printf("无效方法\n");
+                break;
+            case 7:
+                printf("判断链表是否成环\n");
+                Status status = IsLoopList(L);
+                if(status == SUCCESS){
+                    printf("是\n");
+                } else printf("不是\n");
+                break;
+//            case 8:
+//                printf("奇偶调换\n");
+//                ReverseEvenList(L);
+//                break;
+            case 9:
+                printf("查询中点\n");
+                LNode *midNode = FindMidNode(&L);
+                printf("中点数据为:%d\n",midNode->data);
+                break;
+            case 10:
+                ShowList(L);
+                break;
+            case 11:
+                exit(0);
+            default:
+                printf("无效的选择，请重新输入\n");
+        }
+    } while (choice != 0);
+
     return 0;
 }
 
-Status InitList(LinkedList *L){
-    //判断*L是否为空节点
-    if(!*L){
-        return ERROR;
-    }
-    //分配
-    (*L) = (LinkedList) malloc(sizeof (LNode));
-
-    if((*L) == NULL){
-        //内存不足
-        printf("内寸不足\n");
-        return OVERFLOW;
-    }
-    //将头节点的指针域置为Null
-    (*L)-> next = NULL;
-
-    printf("成功初始化头节点");
-    return SUCCESS;
+void printMenu() {
+    printf("\n***** 图形菜单 *****\n");
+    printf("1. 初始化链表\n");
+    printf("2. 添加节点\n");
+    printf("3. 插入节点\n");
+    printf("4. 删除节点\n");
+    printf("5. 查询节点\n");
+    printf("6. 反转链表\n");
+    printf("7. 判断链表是否成环\n");
+//    printf("8. 奇偶调换\n");
+    printf("9. 查询中点\n");
+    printf("10. 显示当前链表\n");
+    printf("11. 退出\n");
+    printf("请选择操作: ");
 }
-
-void DestroyList(LinkedList *L){
-    //初始化指针p为第一个节点
-    LNode *p = (*L) -> next;
-
-    //进入循环
-    while (p -> next != NULL){
-        //如果当前节点的下一节点不为Null, 则free, 遍历下一个节点
-        LNode *temp = p;
-        p = p -> next;
-        free(temp);
-    }
-
-    //最后释放头节点
-    free(*L);
-}
-
-Status InsertList(LNode *p, LNode *q){
-    //检查数据
-    if(p == NULL || q == NULL){
-        printf("节点数据异常\n");
-        return ERROR;
-    }
-    //插入的节点指向插入位置后面的节点
-    q -> next = p -> next;
-    //前一个节点指向被插入的节点
-    p -> next = q;
-
-    return SUCCESS;
-}
-
-Status DeleteList(LNode *p, ElemType *e){
-    //检查数据
-    if(p == NULL){
-        printf("节点数据异常\n");
-        return ERROR;
-    }
-
-    //找到p的下一节点,如果是NULL则返回SUCCESS
-    if (p -> next == NULL){
-        printf("要删除的节点已经为NULL, 不会进行对e的赋值\n");
-    } else{
-        //记录删除节点
-        LNode *temp = p -> next;
-
-        //断开连接
-        p -> next = p -> next -> next;
-
-        //赋值
-        (*e) = temp->data;
-
-        //释放空间
-        free(temp);
-    }
-
-    return SUCCESS;
-}
-
-void TraverseList(LinkedList L, void (*visit)(ElemType e)){
-    LinkedList p = L -> next;
-    while (p) {
-        visit(p -> data);
-    }
-}
-
-Status SearchList(LinkedList L, ElemType e){
-    //检查数据
-    if(L->next == NULL){
-        printf("空链表\n");
-        return ERROR;
-    }
-    //初始化
-    LinkedList p = L->next;
-    //进入循环开始遍历
-    while(p != NULL){
-        //找到节点,打印提示信息并跳出循环
-        if(p->data == e){
-            printf("找到值为%d的节点\n",e);
-            return SUCCESS;
-        }
-        //否则遍历下一节点
-        p = p->next;
-    }
-    //如果运行到此处时,p为NULL,说明没有找到节点
-    if (p == NULL){
-        printf("未找到节点\n");
-        return ERROR;
-    }
-}
-
