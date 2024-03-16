@@ -4,5 +4,4 @@ project(Sources C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(Sources main.c
-        ../../../../../../../linkedList.h
-        ../../../../../../../linkedList.h)
+)

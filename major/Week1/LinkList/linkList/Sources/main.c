@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "linkedList.h"
+#include "../Headers/linkedList.h"
 
 int main() {
     printf("Hello, World!\n");
@@ -44,6 +44,11 @@ void DestroyList(LinkedList *L){
 }
 
 Status InsertList(LNode *p, LNode *q){
+    //检查数据
+    if(p == NULL || q == NULL){
+        printf("节点数据异常\n");
+        return ERROR;
+    }
     //插入的节点指向插入位置后面的节点
     q -> next = p -> next;
     //前一个节点指向被插入的节点
@@ -52,7 +57,32 @@ Status InsertList(LNode *p, LNode *q){
     return SUCCESS;
 }
 
-Status DeleteList(LNode *p, ElemType *e);
+Status DeleteList(LNode *p, ElemType *e){
+    //检查数据
+    if(p == NULL){
+        printf("节点数据异常\n");
+        return ERROR;
+    }
+
+    //找到p的下一节点,如果是NULL则返回SUCCESS
+    if (p -> next == NULL){
+        printf("要删除的节点已经为NULL, 不会进行对e的赋值\n");
+    } else{
+        //记录删除节点
+        LNode *temp = p -> next;
+
+        //断开连接
+        p -> next = p -> next -> next;
+
+        //赋值
+        (*e) = temp->data;
+
+        //释放空间
+        free(temp);
+    }
+
+    return SUCCESS;
+}
 
 void TraverseList(LinkedList L, void (*visit)(ElemType e)){
     LinkedList p = L -> next;
@@ -60,3 +90,29 @@ void TraverseList(LinkedList L, void (*visit)(ElemType e)){
         visit(p -> data);
     }
 }
+
+Status SearchList(LinkedList L, ElemType e){
+    //检查数据
+    if(L->next == NULL){
+        printf("空链表\n");
+        return ERROR;
+    }
+    //初始化
+    LinkedList p = L->next;
+    //进入循环开始遍历
+    while(p != NULL){
+        //找到节点,打印提示信息并跳出循环
+        if(p->data == e){
+            printf("找到值为%d的节点\n",e);
+            return SUCCESS;
+        }
+        //否则遍历下一节点
+        p = p->next;
+    }
+    //如果运行到此处时,p为NULL,说明没有找到节点
+    if (p == NULL){
+        printf("未找到节点\n");
+        return ERROR;
+    }
+}
+

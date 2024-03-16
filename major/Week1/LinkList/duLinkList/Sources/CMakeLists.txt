@@ -8,3 +8,5 @@ include_directories(major/Week1/LinkList/dulinkList/Sources)
 
 add_executable(1 main.c
         ../Headers/duLinkedList.h)
+
+set(EXECUTABLE_OUTPUT_PATH ../Release)
