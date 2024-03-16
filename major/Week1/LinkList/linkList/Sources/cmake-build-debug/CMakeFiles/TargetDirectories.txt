@@ -1,3 +1,0 @@
-E:/some programmes/QG/major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/Sources.dir
-E:/some programmes/QG/major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/some programmes/QG/major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/rebuild_cache.dir
