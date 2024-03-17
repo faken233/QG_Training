@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../Headers/linkedList.h"
+#include "linkedList.h"
 
 Status InitList(LinkedList *L){
     //判断*L是否为空节点

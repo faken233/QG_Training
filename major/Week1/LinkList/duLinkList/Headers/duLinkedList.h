@@ -73,7 +73,7 @@ void DestroyList_DuL(DuLinkedList *L);
  *	@return		 : status
  *  @notice      : None
  */
-Status InsertBeforeList_DuL(DuLNode *p, DuLNode *q);
+Status InsertBeforeList_DuL(DuLinkedList L,ElemType p, ElemType q);
 
 /**
  *  @name        : Status InsertAfterList_DuL(DuLNode *p, DuLNode *q)
@@ -82,7 +82,7 @@ Status InsertBeforeList_DuL(DuLNode *p, DuLNode *q);
  *	@return		 : status
  *  @notice      : None
  */
-Status InsertAfterList_DuL(DuLNode *p, DuLNode *q);
+Status InsertAfterList_DuL(DuLinkedList L, ElemType p, ElemType q);
 
 /**
  *  @name        : Status DeleteList_DuL(DuLNode *p, ElemType *e)
@@ -91,7 +91,7 @@ Status InsertAfterList_DuL(DuLNode *p, DuLNode *q);
  *	@return		 : status
  *  @notice      : None
  */
-Status DeleteList_DuL(DuLNode *p, ElemType *e);
+Status DeleteList_DuL(DuLinkedList L, ElemType p);
 
 /**
  *  @name        : void TraverseList_DuL(DuLinkedList L, void (*visit)(ElemType e))
@@ -101,7 +101,9 @@ Status DeleteList_DuL(DuLNode *p, ElemType *e);
  *  @notice      : None
  */
 void TraverseList_DuL(DuLinkedList L, void (*visit)(ElemType e));
-
+void visit(ElemType e);
+DuLNode *createDuNode(ElemType e);
+Status addDuNode(DuLinkedList L, ElemType e);
 
  /**************************************************************
 *	End-Multi-Include-Prevent Section

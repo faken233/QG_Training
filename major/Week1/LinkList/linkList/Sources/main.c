@@ -1,9 +1,8 @@
 //
 // Created by 何松 on 2024/3/16.
 //
-#include "../Headers/linkedList.h"
-#include <stdio.h>
-#include "function.c"
+#include "linkedList.h"
+
 void printMenu();
 
 
