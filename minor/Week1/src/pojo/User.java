@@ -1,14 +1,15 @@
 package pojo;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class User {
     private String userId;
     private String username;
     private int userScore;
-    private LocalDate createTime;
+    private Date createTime;
 
-    public User(String id, String username, int userScore, LocalDate createTime) {
+    public User(String id, String username, int userScore, Date createTime) {
         this.userId = id;
         this.username = username;
         this.userScore = userScore;
@@ -52,11 +53,11 @@ public class User {
         this.userScore = userScore;
     }
 
-    public LocalDate getCreateTime() {
+    public Date getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(LocalDate createTime) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 }

@@ -1,10 +1,11 @@
-package Utils;
+package utils;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 
 @FunctionalInterface
 public interface MyHandler<T> {
-    T handleResultSet(ResultSet resultSet) throws SQLException;
+    List<T> handleResultSet(ResultSet resultSet) throws SQLException;
 }

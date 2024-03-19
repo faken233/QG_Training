@@ -1,13 +1,11 @@
-import Utils.JDBCUtils;
+import utils.JDBCUtils;
 
-import Utils.MyHandler;
+import utils.MyHandler;
 import pojo.User;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -26,42 +24,46 @@ public class Test {
             throw new RuntimeException(e);
         }
 
-        User user = new User("31230047861", "hs", 123, LocalDate.now());
-        User user1 = new User("31230047862", "hs1", 123, LocalDate.now());
-        JDBCUtils.insert(user);
-        JDBCUtils.insert(user1);
+//        User user = new User("31230047861", "hs", 123, LocalDate.now());
+//        User user1 = new User("31230047862", "hs1", 123, LocalDate.now());
+//        JDBCUtils.insert(user);
+//        JDBCUtils.insert(user1);
 
         try {
-            User query = JDBCUtils.query("username = 'hs'", new MyHandler<User>() {
+            List<User> query = JDBCUtils.query("username = 'hs'", new MyHandler<User>() {
                 @Override
-                public User handleResultSet(ResultSet resultSet) throws SQLException {
+                public List<User> handleResultSet(ResultSet resultSet) throws SQLException {
+                    List<User> users = new ArrayList<>();
                     resultSet.next();
-                    User k_user = new User(
+                    users.add(new User(
                             resultSet.getString("user_id"),
                             resultSet.getString("username"),
                             resultSet.getInt("user_score"),
-                            resultSet.getDate("create_time").toLocalDate()
-                    );
-                    return user1;
+                            resultSet.getDate("create_time")
+                    ));
+                    return users;
                 }
             });
             System.out.println(query);
-            Set<User> query1 = JDBCUtils.query("user_score=123", new MyHandler<Set<User>>() {
+            List<User> query1 = JDBCUtils.query("user_score=123", new MyHandler<User>() {
                 @Override
-                public Set<User> handleResultSet(ResultSet resultSet) throws SQLException {
-                    Set<User> users = new HashSet<>();
+                public List<User> handleResultSet(ResultSet resultSet) throws SQLException {
+                    List<User> users = new ArrayList<>();
                     while (resultSet.next()) {
                         users.add(new User(
                                 resultSet.getString("user_id"),
                                 resultSet.getString("username"),
                                 resultSet.getInt("user_score"),
-                                resultSet.getDate("create_time").toLocalDate()
+                                resultSet.getDate("create_time")
                         ));
                     }
                     return users;
                 }
             });
             System.out.println(query1);
+
+            JDBCUtils.update("id = 4", "12345678911", "xdj", 321, new Date(System.currentTimeMillis()));
+            JDBCUtils.delete("id = 5");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

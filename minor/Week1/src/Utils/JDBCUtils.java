@@ -1,21 +1,17 @@
-package Utils;
+package utils;
 
 import pojo.User;
 
 import java.io.FileReader;
 import java.sql.*;
-import java.time.LocalDate;
+import java.util.List;
 import java.util.Properties;
-import java.util.Set;
-import java.util.StringJoiner;
 
 public class JDBCUtils {
     private static final String driver;
     private static final String url;
     private static final String username;
     private static final String password;
-    private static final String table;
-
     private static final Connection connection;
     private static final Statement statement;
 
@@ -31,7 +27,6 @@ public class JDBCUtils {
             url = properties.getProperty("url");
             username = properties.getProperty("username");
             password = properties.getProperty("password");
-            table = properties.getProperty("table");
             //加载驱动
             Class.forName(driver);
             //创建与数据库的连接
@@ -53,10 +48,11 @@ public class JDBCUtils {
         return statement;
     }
 
-    public static <T> T query(String condition, MyHandler<T> myHandler) throws Exception {
-        String sql = "select * from " + table + " where " + condition;
+    public static <T> List<T> query(String condition, MyHandler<T> myHandler) throws Exception {
+        String sql = "select * from test2.user_table" + " where " + condition;
 
         ResultSet resultSet = statement.executeQuery(sql);
+
         return myHandler.handleResultSet(resultSet);
     }
 
@@ -64,14 +60,31 @@ public class JDBCUtils {
         String userId = user.getUserId();
         String username = user.getUsername();
         int userScore = user.getUserScore();
-        LocalDate createTime = user.getCreateTime();
-        PreparedStatement preparedStatement = connection.prepareStatement("insert into " + table + " (user_id, username, user_score, create_time) " +
+        Date createTime = user.getCreateTime();
+        PreparedStatement preparedStatement = connection.prepareStatement("insert into test2.user_table " + " (user_id, username, user_score, create_time) " +
                 " values (?,?,?,?)");
         preparedStatement.setString(1, userId);
         preparedStatement.setString(2, username);
         preparedStatement.setString(3, userScore + "");
-        preparedStatement.setDate(4, Date.valueOf(createTime));
+        preparedStatement.setDate(4, createTime);
         return preparedStatement.execute();
+    }
+
+    public static int update(String condition, String userId, String username, int userScore, Date createTime) throws SQLException {
+        String sql = "update test2.user_table set user_id = ?, username = ?, user_score = ?, create_time = ? where " + condition;
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1, userId);
+        preparedStatement.setString(2, username);
+        preparedStatement.setInt(3, userScore);
+        preparedStatement.setDate(4, createTime);
+
+        return preparedStatement.executeUpdate();
+    }
+
+    public static boolean delete(String condition) throws SQLException {
+        String sql = "delete from test2.user_table where " + condition;
+        return statement.execute(sql);
+
     }
 }
 
