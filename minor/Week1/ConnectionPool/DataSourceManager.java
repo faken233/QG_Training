@@ -14,7 +14,7 @@ public class DataSourceManager {
         }
     }
 
-    public DataSourceManager() throws SQLException, ClassNotFoundException {
+    public DataSourceManager() {
     }
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException, InterruptedException {
