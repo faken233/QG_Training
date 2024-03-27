@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<h1>全部测试表单</h1>
+
+    POST方法返回200 输入随意的用户名和密码<br>
+    <form action="/http_socket_demo_war/req1" method="post">
+        用户名:<input type="text" name="username">
+        密码:<input type="text" name="password">
+        <input type="submit">
+    </form><br>
+
+<hr>
+
+    GET方法返回200 输入随机的用户名和密码<br>
+    <form action="/http_socket_demo_war/req1" method="get">
+        用户名:<input type="text" name="username">
+        密码:<input type="text" name="password">
+        <input type="submit">
+    </form><br>
+
+<hr>
+
+    POST方法返回302 输入随意的用户名和密码<br>
+    <form action="/http_socket_demo_war/req2" method="post">
+        用户名:<input type="text" name="username">
+        密码:<input type="text" name="password">
+        <input type="submit">
+    </form><br>
+
+<hr>
+
+    GET方法返回302 输入随机的用户名和密码<br>
+    <form action="/http_socket_demo_war/req2" method="get">
+        用户名:<input type="text" name="username">
+        密码:<input type="text" name="password">
+        <input type="submit">
+    </form><br>
+
+<hr>
+
+    GET方法返回205 输入随机的用户名和密码<br>
+    <form action="/http_socket_demo_war/req4" method="get">
+        用户名:<input type="text" name="username">
+        密码:<input type="text" name="password">
+        <input type="submit">
+    </form><br>
+
+<hr>
+
+    GET方法返回405 输入随机的用户名和密码<br>
+    <form action="/http_socket_demo_war/req5" method="get">
+        用户名:<input type="text" name="username">
+        密码:<input type="text" name="password">
+        <input type="submit">
+    </form><br>
+
+<hr>
+
+    GET方法返回403 输入随机的用户名和密码<br>
+    <form action="/http_socket_demo_war/req6" method="get">
+        用户名:<input type="text" name="username">
+        密码:<input type="text" name="password">
+        <input type="submit">
+    </form><br>
+
+<hr>
+
+    GET方法返回401 当用户名为zhangsan时 其余情况返回200<br>
+    <form action="/http_socket_demo_war/req7" method="get">
+        用户名:<input type="text" name="username">
+        密码:<input type="text" name="password">
+        <input type="submit">
+    </form><br>
+
+<hr>
+
+    返回500<br>
+    <form action="/http_socket_demo_war/req3" method="get">
+    <input type="submit">
+    </form>
+
+<hr>
+
+    Head方法返回200<br>
+    <form action="/http_socket_demo_war/req8" method="head">
+        <input type="submit">
+    </form>
+</body>
+</html>

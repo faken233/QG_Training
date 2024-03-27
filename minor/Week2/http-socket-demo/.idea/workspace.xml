@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="80560fa7-628c-4983-8a89-8714b4cd3367" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../main.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-dea257103874ea5d1dd1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/1.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/1.dir/main.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CMakeRCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/function.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/function.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../major/Week2/.idea/Week2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week1/JDBC-Pool/JDBC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week1/MyConnectionPool/MyConnectionPool.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/AllRequest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Headers/duLinkedList.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Headers/duLinkedList.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/duLinkList/Sources/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Headers/linkedList.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Headers/linkedList.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/.cmake/api/v1/reply/cache-v2-17cc92fcdbf8c08e5787.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-862662a189a5b6b37d05.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/.cmake/api/v1/reply/target-Sources-Debug-03310fd514d08ac2e5a8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../major/Week1/LinkList/linkList/Sources/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../major/Week1/第一周周记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week1/src/main/java/com/hs678/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="E:\DevelopTools\apache-maven-3.9.6" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=local" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2e3KZDpVM4Xyh0fOjLxYbyeczkD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Maven.http-socket-demo [clean].executor": "Run",
+    "Maven.http-socket-demo [compile,war:war].executor": "Run",
+    "Maven.http-socket-demo [compile].executor": "Run",
+    "Maven.http-socket-demo [install].executor": "Run",
+    "Maven.http-socket-demo [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.http-socket-demo [org.apache.maven.plugins:maven-war-plugin:3.4.0:war].executor": "Run",
+    "Maven.http-socket-demo [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run].executor": "Run",
+    "Maven.http-socket-demo [tomcat7:run].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat 服务器.Tomcat8.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/some programmes/Javaweb/ex/Curd",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\some programmes\QG Local\minor\Week2\http-socket-demo\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\some programmes\QG Local\minor\Week2\http-socket-demo\src\main\java" />
+      <recent name="E:\some programmes\QG Local\minor\Week2\http-socket-demo\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.99" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="http-socket-demo:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/http_socket_demo_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="8171767b-681e-414a-a209-b24e59154dd1" />
+      </server-settings>
+      <log_file alias="Tomcat Localhost 日志" path="%IDEA_RUN:CATALINA_BASE%/logs/localhost.*" />
+      <log_file checked="false" alias="Tomcat Catalina 日志" path="%IDEA_RUN:CATALINA_BASE%/logs/catalina.*" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6188" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="http-socket-demo:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="80560fa7-628c-4983-8a89-8714b4cd3367" name="更改" comment="" />
+      <created>1711127874637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711127874637</updated>
+      <workItem from="1711127875722" duration="714000" />
+      <workItem from="1711128600399" duration="212000" />
+      <workItem from="1711128814394" duration="184000" />
+      <workItem from="1711161424894" duration="516000" />
+      <workItem from="1711161943587" duration="3009000" />
+      <workItem from="1711220734230" duration="6000" />
+      <workItem from="1711374592099" duration="520000" />
+      <workItem from="1711375244206" duration="6888000" />
+      <workItem from="1711463119546" duration="9270000" />
+      <workItem from="1711515288090" duration="1976000" />
+      <workItem from="1711517268003" duration="221000" />
+      <workItem from="1711517498856" duration="2387000" />
+      <workItem from="1711519896319" duration="1055000" />
+      <workItem from="1711527287154" duration="3035000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
