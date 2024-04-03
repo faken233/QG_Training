@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery-3</title>
+</head>
+<body>
+
+<button type="button" id="btn" >select all emps</button>
+    <ul id="list"></ul>
+
+<hr>
+
+    <form id="myForm">
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="id"><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <label for="dept">Department:</label><br>
+        <input type="text" id="dept" name="dept"><br><br>
+        <button type="button" id="submitBtn">Submit</button>
+    </form>
+    <div id="response"></div>
+
+<hr>
+
+    <form id="form1">
+        <label for="id">ID：</label>
+        <input type="text" id="--id" name="id" required>
+        <button type="button" id="btn1">select</button>
+    </form>
+<ul id="list1"></ul>
+</body>
+<script src="js/jquery-3.7.1.js" type="text/javascript" charset="UTF-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript">
+    $("#btn").click(function () {
+        $("#list").empty();
+        $.ajax({
+            type: "GET",
+            url : "http://localhost:8080/jquery_demo_war/users",
+            dataType: "json",
+            data:{
+            },
+            success:function(resp){
+                console.log(resp);
+                console.log(resp.data);
+                for (let i = 0; i < resp.data.length; i++) {
+                    $("#list").append("<li>" + " " + (resp.data[i]).id + " " + (resp.data[i]).name + " " + (resp.data[i].age)
+                        + " " + (resp.data[i]).dept + "</li>" );
+                }
+            }
+        });
+    });
+    $(document).ready(function(){
+        $("#submitBtn").click(function(){
+            var formData = $("#myForm").serialize(); // 序列化表单数据
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:8080/jquery_demo_war/user", // 指定的URL
+                data: formData,
+                success:function(resp){
+                    console.log(resp);
+                    $("#response").html(resp); // 显示提交结果
+                }
+            });
+        });
+    });
+    $("#btn1").click(function () {
+        $("#list1").empty();
+        var formData = $("#form1").serialize();
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:8080/jquery_demo_war/user",
+            data:formData,
+            dataType: "json",
+            success:function (resp) {
+                console.log(resp);
+                console.log(resp.data);
+                console.log(resp.data.name);
+                $("#list1").append("<li>" + resp.data.name + "</li>");
+            },
+            error:function (){
+                $("#list1").html("error");
+            }
+        })
+    })
+
+</script>
+</html>
