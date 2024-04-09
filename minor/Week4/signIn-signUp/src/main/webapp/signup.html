@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .el-input{
+            width: auto;
+        }
+        .el-form{
+            width: 300px;
+            margin: auto;
+            border: 1px solid green;
+            background-image: url("https://pic3.zhimg.com/80/v2-d8e1c695f6f11a6ba6e1d9c465a541c6_1440w.webp");
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+<el-form ref="form" :model="user" label-width="80px">
+    <div style="text-align: center;"><h4>注册页面</h4>
+    <el-form-item label="用户名">
+        <el-input v-model="user.name" clearable></el-input>
+    </el-form-item>
+
+    <el-form-item label="密码">
+        <el-input v-model="user.password" show-password></el-input>
+    </el-form-item>
+
+    <el-form-item label="确认密码">
+        <el-input v-model="user.password1" show-password></el-input>
+    </el-form-item>
+
+    <el-form-item>
+        <el-button type="primary" @click="onSubmit">立即注册</el-button>
+        <el-button @click="returnLoginPage">取消</el-button>
+    </el-form-item>
+    </div>
+</el-form>
+</div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data() {
+            return {
+                user:{
+                    name:"",
+                    password:"",
+                    password1:""
+                }
+            }
+        },
+        methods: {
+            onSubmit() {
+                if (this.user.password === this.user.password1) {
+                    axios({
+                        method:'signup',
+                        url:'http://localhost:8080/signIn_signUp/user/signupUser',
+                        data: this.user,
+                    }).then(resp=>{
+                        if (resp.data.msg=== "success") {
+                            console.log("success!");
+                            this.$notify({
+                                title: '成功',
+                                message: '您已经成功注册, 现在去登陆吧!',
+                                type: 'success'
+                            })
+                        }else if (resp.data.msg === "existed") {
+                            console.log("existed");
+                            this.$notify.info({
+                                title: '此账户姓名已被注册',
+                                message: '请更换你的注册账户姓名!',
+                            })
+                        }
+                    })
+                }else {
+                    this.$notify({
+                        title: '错误',
+                        message: '两次输入密码不一致!',
+                        type: 'warning'
+                    });
+                }
+                console.log('submit!');
+            },
+            returnLoginPage(){
+                window.location.href="http://localhost:8080/signIn_signUp/login.html";
+            }
+        }
+    })
+</script>
+</html>
